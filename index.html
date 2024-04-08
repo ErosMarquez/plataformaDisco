@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canserbero</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-400  font-[Poppins]">
+    <!-- sidebar -->
+    <nav id="sidebar" class="sidebar fixed top-0 bottom-0 p-2 w-[250px] overflow-y-auto text-center">
+        <div class="text-teal-200 text-xl">
+            <div class="p-3 mt-1 flex items-center">
+                <h1 class="font-medium text-teal-200 text-[15px]  m-auto">CanVive</h1>
+            </div>
+            <hr class="my-2 text-neutral-400">
+        </div>
+        <div>
+            <a href="pages/addSong.html">
+                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-neutral-400">
+                    <span class="text-[15px] ml-4 text-gray-200" >Añadir Album</span>
+                </div>
+            </a>
+            <a href="pages/tour.html">
+                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-neutral-400">
+                    <span class="text-[15px] ml-4 text-gray-200">Gira</span>    
+                </div>
+            </a>
+        </div>   
+        <div class="absolute inset-x-0 bottom-14 h-16 mx-2" >
+            <a href="pages/logIn.html">
+                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-neutral-400" >
+                    <span class="text-[15px] ml-4 text-gray-200">LogIn</span>
+                </div>
+            </a>
+            <a href="pages/logIn.html">
+                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-neutral-400">
+                    <span class="text-[15px] ml-4 text-gray-200">LogOut</span>    
+                </div>
+            </a>
+        </div>
+    </nav>
+    <!-- sidebar -->
+    <main class="ml-60  bg-auto bg-center bg-no-repeat h-screen text-white overflow-y-hidden"
+    style="background-image: url('images/cantan.jfif');">
+        <div class="w-2/4 h-full" >
+            <div >
+                <h2 class="text-5xl font-sans ml-36 my-5">Canserbero</h2>
+            </div>
+        
+            <div class="mx-10 text-justify">
+                "Con letras profundas, una voz inconfundible y una actitud de sólida autenticidad, Canserbero necesitó poco tiempo para convertirse en una de las figuras emblemáticas del rap en América Latina. Sus canciones cuentan historias complejas y oscuras. Son reflexiones sesudas en torno a la vida, la muerte, la injusticia y las calles"
+            </div>
+            <div class="mt-28">
+                <h2 class="text-4xl font-sans ml-36 my-5">Repertorio</h2>
+            </div>
+            <!-- <div class="absolute bottom-8"> -->
+            <div class="flex justify-evenly">
+                <span class="w-32 text-center">
+                    <p>Vida</p>
+                    <a href="pages/albumVida.html">
+                        <img src="images/Vida.jpg" alt="vida">
+                    </a>
+                </span>
+                <span class="w-32 text-center">
+                    <p>muerte</p>
+                    <a href="pages/albumMuerte.html">
+                        <img class="border-solid border-4 border-zinc-700 h-32" src="images/muerte1.jpg" alt="muerte">
+                    </a>   
+                </span>
+                <!-- <span class="w-32 text-center"> 
+                    <p>Añadir</p>
+                    <a href="pages/addAlbum.html">
+                        <img src="images/anadir1.jpg" alt="add">
+                    </a>
+                </span>-->
+            </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

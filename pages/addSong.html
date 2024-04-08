@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Songs</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-400  font-[Poppins]">
+    <!-- sidebar -->
+    <nav id="sidebar" class="sidebar fixed top-0 bottom-0 p-2 w-[250px] overflow-y-auto text-center">
+        <div class="text-teal-200 text-xl">
+            <div class="p-3 mt-1 flex items-center">
+                <h1 class="">CanVive</h1>
+            </div>
+            <hr class="my-2 text-neutral-400">
+        </div>
+        <div>
+            </a>
+            <a href="../index.html">
+                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-neutral-400">
+                    <span class="text-[15px] ml-4 text-gray-200">Home</span>    
+                </div>
+            </a>
+            <a href="../pages/tour.html">
+                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-neutral-400">
+                    <span class="text-[15px] ml-4 text-gray-200" >Gira</span>
+                </div>
+            </a>
+        </div>   
+        <div class="absolute inset-x-0 bottom-0 h-16 mx-2" >
+            <a href="../pages/logIn.html">
+                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-neutral-400">
+                    <span class="text-[15px] ml-4 text-gray-200">LogOut</span>    
+                </div>
+            </a>
+        </div>
+    </nav>
+    <!-- sidebar -->
+    <main class="ml-60  bg-auto bg-center bg-no-repeat h-screen text-white overflow-y-hidden"
+    style="background-image: url('../images/cantan.jfif');">
+        <div class="w-full h-full text-center" >
+            <h2 class="text-5xl font-sans text-center my-5">Add Songs</h2>
+            <p>Title</p>
+            <input class= "w-3/5 h mt-5" type="text" name="titulo">
+            <p class="mt-5">duration</p>
+            <input class= "w-3/5 mt-5" type="text" name="Descripcion">
+            <p class="mt-5">Add imagen url</p>
+            <input class= "w-3/5 mt-5" type="text" name="imagendisco"> <br>
+            <span class="mt-5">
+                <button class="mt-5 border-solid bg-blue-900 px-7 border-white-50 border-2 rounded-2xl">Edit</button>   
+                <button class="mt-5 border-solid bg-red-900 px-5 border-white-50 border-2 rounded-2xl">Cancel</button>
+            </span>    
+        </div>
+    </main>
+</body>
+</html>

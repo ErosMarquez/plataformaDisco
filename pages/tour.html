@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-400  font-[Poppins]">
+    <!-- sidebar -->
+    <nav id="sidebar" class="sidebar fixed top-0 bottom-0 p-2 w-[250px] overflow-y-auto text-center">
+        <div class="text-teal-200 text-xl">
+            <div class="p-3 mt-1 flex items-center">
+                <h1 class="">CanVive</h1>
+            </div>
+            <hr class="my-2 text-neutral-400">
+        </div>
+        <div>
+            </a>
+            <a href="../index.html">
+                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-neutral-400">
+                    <span class="text-[15px] ml-4 text-gray-200">Home</span>    
+                </div>
+            </a>
+            <a href="../pages/addSong.html">
+                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-neutral-400">
+                    <span class="text-[15px] ml-4 text-gray-200" >Añadir Album</span>
+                </div>
+            
+        </div>   
+        <div class="absolute inset-x-0 bottom-0 h-16 mx-2" >
+            <a href="../pages/logIn.html">
+                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-neutral-400">
+                    <span class="text-[15px] ml-4 text-gray-200">LogOut</span>    
+                </div>
+            </a>
+        </div>
+    </nav>
+    <!-- sidebar -->
+    <main class="ml-60  bg-auto bg-center bg-no-repeat h-screen text-white overflow-y-hidden"
+    style="background-image: url('../images/cantan.jfif');">
+    <div class="w-full h-full text-center" >
+        <h2 class="text-5xl font-sans text-center my-5">Edit album</h2>
+        <table class="w-full text-center text-xl">
+            <colgroup span="5" class="columns"></colgroup>
+            <tr>
+              <td>set 20</td>
+              <td>Heaven Stadium</td>
+              <td class="bg-red-900 border-2 rounded-2xl">Sold out</td>
+            </tr>
+            <tr>
+              <td>set23</td>
+              <td>Hells Stadium</td>
+              <td class="border-solid bg-blue-900 border-white-50 border-2 rounded-2xl">Tickets</td>
+            </tr>
+            <tr>
+              <td>nov 05</td>
+              <td>Earth Stadium</td>
+              <td class="border-solid bg-blue-900 border-white-50 border-2 rounded-2xl">Tickets</td>
+            </tr>
+          </table>
+    </div>
+</body>
+</html>

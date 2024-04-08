@@ -1,0 +1,68 @@
+.fondo{
+    /* background-color: rgb(82 82 91); */
+    background-image: url(images/can11.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-position: center right; */
+    back
+}
+.registro {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.login{
+    
+    /* width: 500px; */
+    /* height: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+}
+.logincuadro { 
+    position: absolute;
+    top: 50%;
+    /* background-color: white; */
+    /* border: solid; */
+    /* border-radius: 50px; */
+    width: 400px;
+    padding: 15px;
+    transform: translate(0, 50%)
+}
+.registro {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+}
+.signupcuadro { 
+    position: absolute;
+    top: 50%;
+    border-radius: 50px;
+    width: 400px;
+    padding: 15px;
+    transform: translate(0, 25%)
+}
+input {
+    padding: 10px;
+    border-radius: 40px;
+}
+.hola {
+    margin-bottom: 10px;
+}
+#sidebar {
+    background-color:rgb(40 75 99)
+}
+hover{
+    background-color: rgb(60, 110, 113);
+}
