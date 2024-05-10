@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
     <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
 </head>
 <body class="fondo">
     <main class="login">
         <div class="logincuadro">
             <h3>Log In</h3>
-            <form action="post">
-                <input class="hola" type="text" name="mail" placeholder="mail"> <br>
-                <input class="hola" type="password" name="password" id="password" placeholder="Contraseña"> <br>
-                <input type="submit">
+            <form id="form" action="post">
+                <input id="email" class="hola" type="text" name="mail" placeholder="mail"> <br>
+                <input id="password" class="hola" type="password" name="password" id="password" placeholder="Contraseña"> <br>
+                <button type="submit">Abrir cuenta</button>
+        
             </form>
 
             <div>
@@ -23,6 +25,6 @@
             </div>
         </div>    
     </main>
-    
+    <script src="../script/script.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <title>Canserbero</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b98ee23ae5.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-neutral-400  font-[Poppins]">
     <!-- sidebar -->
@@ -19,7 +20,7 @@
         <div>
             <a href="pages/addSong.html">
                 <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-neutral-400">
-                    <span class="text-[15px] ml-4 text-gray-200" >Añadir Album</span>
+                    <span class="text-[15px] ml-4 text-gray-200">Añadir Album</span>
                 </div>
             </a>
             <a href="pages/tour.html">
@@ -58,13 +59,13 @@
             <!-- <div class="absolute bottom-8"> -->
             <div class="flex justify-evenly">
                 <span class="w-32 text-center">
-                    <p>Vida</p>
+                    <p>Vida <i onclick="addFavorites(favorites)" class="fa-regular fa-star fa-lg" style="color: #3b9e1d;"></i></p>
                     <a href="pages/albumVida.html">
                         <img src="images/Vida.jpg" alt="vida">
                     </a>
                 </span>
                 <span class="w-32 text-center">
-                    <p>muerte</p>
+                    <p>muerte <i onclick="addFavorites(favorites)" class="fa-regular fa-star fa-lg" style="color: #3b9e1d;"></i></p>
                     <a href="pages/albumMuerte.html">
                         <img class="border-solid border-4 border-zinc-700 h-32" src="images/muerte1.jpg" alt="muerte">
                     </a>   
@@ -79,5 +80,7 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="script/favorites.js"></script>
 </body>
 </html>

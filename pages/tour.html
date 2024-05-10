@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-neutral-400  font-[Poppins]">
+    <span id="welcome"></span>
     <!-- sidebar -->
     <nav id="sidebar" class="sidebar fixed top-0 bottom-0 p-2 w-[250px] overflow-y-auto text-center">
         <div class="text-teal-200 text-xl">
@@ -42,24 +43,30 @@
     style="background-image: url('../images/cantan.jfif');">
     <div class="w-full h-full text-center" >
         <h2 class="text-5xl font-sans text-center my-5">Edit album</h2>
-        <table class="w-full text-center text-xl">
-            <colgroup span="5" class="columns"></colgroup>
-            <tr>
-              <td>set 20</td>
-              <td>Heaven Stadium</td>
-              <td class="bg-red-900 border-2 rounded-2xl">Sold out</td>
-            </tr>
-            <tr>
-              <td>set23</td>
-              <td>Hells Stadium</td>
-              <td class="border-solid bg-blue-900 border-white-50 border-2 rounded-2xl">Tickets</td>
-            </tr>
-            <tr>
-              <td>nov 05</td>
-              <td>Earth Stadium</td>
-              <td class="border-solid bg-blue-900 border-white-50 border-2 rounded-2xl">Tickets</td>
-            </tr>
-          </table>
+        <div class="m-10">
+            <table class="w-full text-center text-xl">
+                <colgroup span="5" class="columns"></colgroup>
+                <tr>
+                <td>set 20</td>
+                <td>Heaven Stadium</td>
+                
+                <td><button  id="HeavenStadium" onclick="getTickets('Heaven Stadium')" class="bottomBuy" class="border-solid bg-white text-black border-white-50 border-2 rounded-2xl"></i>TICKETS</button></td>
+                </tr>
+                <tr>
+                <td>set23</td>
+                <td>Hells Stadium</td>
+                
+                <td> <button id="HellsStadium" onclick="getTickets('Hells Stadium')" class="bottomBuy" class="border-solid bg-white text-black border-white-50 border-2 rounded-2xl">TICKETS</button></td>
+                </tr>
+                <tr>
+                <td>nov 05</td>
+                <td>Earth Stadium</td>
+                <td><button id="EarthStadium" onclick="getTickets('Earth Stadium')" class="bottomBuy" class="border-solid bg-white text-black border-white-50 border-2 rounded-2xl"><i class="bi bi-ticket-perforated-fill"></i>TICKETS</button></td>
+                </tr>
+            </table>
+        </div>    
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="../script/tours.js"></script>
 </body>
 </html>
